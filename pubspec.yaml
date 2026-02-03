@@ -1,0 +1,47 @@
+name: luxe_cart_admin
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_sign_in: ^7.2.0
+  intl: ^0.20.2
+  supabase_flutter: ^2.12.0
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets: 
+    - assets/images/google.png
+    - .env
+
+flutter_native_splash:
+
+  color: "#D1D5DB" 
+  color_dark: "#1A1E27"
+  image: assets/images/luxe_logo.png
+  fullscreen: true   
+
+  android_12:
+    color: "#D1D5DB"
+    color_dark: "#1A1E27"
+    image: assets/images/luxe_logo.png    
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#0000FF" # You can set a background color here
+  adaptive_icon_foreground: "assets/images/logo.png"
